@@ -1,4 +1,4 @@
-module SearchsHelper
+module ParkingsHelper
   def distance_kilometers(lat, lng, parking)
     DistanceService.distance_between([lat, lng], [parking.lat, parking.lng])
   end

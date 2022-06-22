@@ -1,4 +1,4 @@
 Rails.application.routes.draw do
-  resources :searchs, only: %i[index create]
-  root 'searchs#index'
+  resources :parkings, only: %i[index]
+  root 'parkings#index'
 end

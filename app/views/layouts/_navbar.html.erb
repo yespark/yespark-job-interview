@@ -2,9 +2,8 @@
   <div class="container-fluid d-flex flex-column">
     <div class="d-flex align-items-center w-100">
       <%= link_to "Yespark", root_path, class: "navbar-brand me-3" %>
-      <%= form_with url: searchs_path, class: "d-flex align-items-center me-auto" do |f| %>
-        <%= f.label :query, "Où cherchez-vous un parking ?", class: "me-3 fw-bold" %>
-        <%= f.search_field :query, required: true, class: "form-control me-2", style: "width: 400px", placeholder: "52 boulevard Haussmann 75009 Paris", "aria-label": "Rechercher" %>
+      <%= form_for parkings_path, method: :get, html: { class: "d-flex align-items-center me-auto mb-0", data: { turbo_frame: 'parkings_list', turbo_action: 'advance' } } do |f| %>
+        <%= search_field_tag :query, params[:description], class: "form-input block pl-10 sm:text-sm sm:leading-5", placeholder: "Où cherchez-vous un parking ?" %>
         <%= f.submit "Rechercher", class: "btn btn-primary", name: nil %>
       <% end %>
     </div>
