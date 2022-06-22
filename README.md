@@ -16,7 +16,7 @@ git clone git@github.com:yespark/yespark-job-test.git
 
 ### Résultat attendu
 
-<img align="center" alt="WELCOME" src="https://github.com/yespark/yespark-job-test/blob/main/markdown/final.png?raw=true" />
+<img align="center" alt="WELCOME" src="https://github.com/yespark/yespark-job-interview/blob/main/markdown/final.png?raw=true" />
 
 ### Indications
 
